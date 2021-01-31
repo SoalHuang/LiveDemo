@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PullViewController" customModule="Pull" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="Epf-uj-rHz" id="wpL-Wg-cGQ"/>
+                <outlet property="backButtonTop" destination="hfY-CL-N8X" id="5bJ-U7-22p"/>
+                <outlet property="contentView" destination="taO-k9-Y87" id="SlL-VP-GHB"/>
+                <outlet property="playButton" destination="qdH-Ds-RmJ" id="hSm-ky-Qay"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taO-k9-Y87">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epf-uj-rHz">
+                    <rect key="frame" x="20" y="44" width="84" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="9Dr-qh-Xtv"/>
+                        <constraint firstAttribute="height" constant="44" id="QPQ-6s-r6Q"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                    <state key="normal" image="btn_back"/>
+                    <connections>
+                        <action selector="backButtonTouched:" destination="-1" eventType="touchUpInside" id="9Xq-aN-efs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdH-Ds-RmJ">
+                    <rect key="frame" x="171" y="754" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="EEA-sR-1CP"/>
+                        <constraint firstAttribute="width" constant="72" id="dX3-ev-rPK"/>
+                    </constraints>
+                    <state key="normal" image="btn_play"/>
+                    <connections>
+                        <action selector="playButtonTouched:" destination="-1" eventType="touchUpInside" id="BHN-Rk-6ti"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qdH-Ds-RmJ" secondAttribute="bottom" constant="36" id="6iQ-1a-aVw"/>
+                <constraint firstItem="Epf-uj-rHz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="CNQ-gt-gid"/>
+                <constraint firstItem="taO-k9-Y87" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JdM-lD-qc9"/>
+                <constraint firstAttribute="bottom" secondItem="taO-k9-Y87" secondAttribute="bottom" id="dSU-Ji-XBv"/>
+                <constraint firstItem="Epf-uj-rHz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hfY-CL-N8X"/>
+                <constraint firstItem="qdH-Ds-RmJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="olZ-iG-Har"/>
+                <constraint firstItem="taO-k9-Y87" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="sCK-4q-anf"/>
+                <constraint firstItem="taO-k9-Y87" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vPd-sk-AWO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_back" width="44" height="44"/>
+        <image name="btn_play" width="32" height="32"/>
+    </resources>
+</document>
